@@ -11,12 +11,11 @@
 
 <script>
     let head = document.getElementById('head');//.innerhtml devuelve el contenido de nuestro objeto 
-    console.log('valor head:' + head);
+    console.log(`valor head:${head.innerHTML}`);//tambien se puede llamar iner atravez de las template literal 
     console.log('saludos desde javascript');
-
-    let parrafo1 = document.getElementById('parrafo1').innerHTML;//.innerhtml devuelve el contenido de nuestro objeto 
-    console.log('valor parrafo 1:' + parrafo1);
-    console.log('saludos desde javascript');
+    let parrafo1 = document.getElementById('parrafo1');//.innerhtml devuelve el contenido de nuestro objeto 
+    console.log(`valor parrafo 1:${parrafo1.innerHTML}`);
+    parrafo1.innerHTML = 'vos que sabes del DOM , che!';
 </script>
 </body>
 </html>
