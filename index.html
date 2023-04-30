@@ -6,10 +6,12 @@
 
 </head>
 <body>
-    <h1>Ejemplo DOM con JavaScript</h1>
-    <p>Saludos!</p>
+    <h1 id="head">Ejemplo DOM con JavaScript</h1>
+    <p id="parrafo1">Saludos!</p>
 
 <script>
+    let head = document.getElementById('head').innerHTML;//.innerhtml devuelve el contenido de nuestro objeto 
+    console.log('valor head:' + head);
     console.log('saludos desde javascript');
 </script>
 </body>
