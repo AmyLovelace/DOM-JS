@@ -11,16 +11,16 @@
         Apellido: <input type="text" name="Apellido" value="Lovelace">
         <br>
     </form>
-    <button onclick='mostrarValores()'>Mostrar</button>//asi se asigna una funcion en un evento (en este caso el evento es el onclick)
-    
+    <button onclick='mostrarValores()'>Mostrar</button> <!--asi se asigna una funcion en un evento (en este caso el evento es el onclick)-->
+    <div id="valores"></div>
     <script>
         function mostrarValores(){
             let formulario = document.forms['formulario'];//le asignamos el id de formulario es el cual queremos acceder a tra vez de document.forms
             let texto = '';//todo se va a ir concatenando en nuestra variable texto depsues de la iteracion
             for (let elemento of formulario){
-                text += elemento.value + '<br/>'//por cada elemento que recorramos en nuestro formulario accederemos a su valor (value)
+                texto += elemento.value + '<br/>'//por cada elemento que recorramos en nuestro formulario accederemos a su valor (value)
             }
-            console.log(texto);
+            document.getElementById('valores').innerHTML = texto;
         }
 
     </script>
