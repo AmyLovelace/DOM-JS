@@ -5,14 +5,13 @@
     <title>Manejo de DOM con JavaScript</title>
 </head>
 <body>
-    <h1>Manejo DOM con javascript </h1>
+    <h1 id="titulo">Manejo DOM con javascript </h1>
     <button onclick="mostrar()">Mostrar</button>
     <br>
     <script>
-        document.write('saludos desde javascript');
-        function mostrar(){
-            document.write('adios');//SOBRE ESCRIBE A TODO LO QUE ESTE ANTES DE ESTA FUNCION
-        }
+       function mostrar(){
+        document.getElementById('titulo').innerHTML += '<br/> TOCÄME CUANDO SEA TUSHA';
+       }
     </script>
 </body>
 </html>
